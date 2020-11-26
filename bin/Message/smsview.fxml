@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dad299; -fx-background-radius: 70;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Message.smsviewController">
+   <children>
+      <TextField fx:id="txtmob" layoutX="215.0" layoutY="105.0" promptText="Recipient" style="-fx-background-radius: 10;" />
+      <Separator layoutY="90.0" prefHeight="0.0" prefWidth="600.0" />
+      <Label layoutX="145.0" layoutY="-35.0" text="Messaging">
+         <font>
+            <Font name="Harlow Solid Italic" size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="99.0" text="Enter Mobile Number">
+         <font>
+            <Font name="Harlow Solid Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtsms" layoutX="34.0" layoutY="154.0" prefHeight="184.0" prefWidth="529.0" promptText="Enter Message" style="-fx-background-color: #b0dab9; -fx-background-radius: 20;" />
+      <Button layoutX="250.0" layoutY="344.0" mnemonicParsing="false" onAction="#doSMS" style="-fx-background-radius: 15;" text="Send SMS" textFill="#151994" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

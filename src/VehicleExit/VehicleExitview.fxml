@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #bbd2c5; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VehicleExit.VehicleExitviewController">
+   <children>
+      <Label layoutX="125.0" layoutY="-17.0" text="Vehicle Exit" textFill="#d32828">
+         <font>
+            <Font name="Harlow Solid Italic" size="70.0" />
+         </font>
+      </Label>
+      <Separator layoutY="106.0" prefHeight="3.0" prefWidth="600.0" />
+      <ComboBox fx:id="combovn" editable="true" layoutX="226.0" layoutY="121.0" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20;" />
+      <Label layoutX="37.0" layoutY="119.0" text="Vehicle No." textFill="#bc2b2b">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="418.0" layoutY="114.0" mnemonicParsing="false" onAction="#doFetch" style="-fx-background-radius: 10;" text="Fetch" textFill="#2e4eda" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font></Button>
+      <Label layoutX="453.0" layoutY="163.0" text="Vehicle Type" textFill="#d32f2f">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="163.0" text="Entry Time" textFill="#b52d2d">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="163.0" text="Entry Date" textFill="#d03232">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="163.0" text="Floor" textFill="#bf3333">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flr" layoutX="57.0" layoutY="210.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="vt" layoutX="465.0" layoutY="210.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="et" layoutX="320.0" layoutY="210.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="ed" layoutX="176.0" layoutY="210.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15;" />
+      <Separator layoutX="1.0" layoutY="252.0" prefHeight="3.0" prefWidth="600.0" />
+      <Label layoutX="37.0" layoutY="264.0" text="Exit Info." textFill="#cd3939">
+         <font>
+            <Font name="Harrington" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="122.0" layoutY="281.0" prefHeight="3.0" prefWidth="457.0" />
+      <Separator layoutX="22.0" layoutY="281.0" prefHeight="3.0" prefWidth="13.0" />
+      <Separator layoutX="16.0" layoutY="282.0" orientation="VERTICAL" prefHeight="147.0" prefWidth="13.0" />
+      <Label layoutX="77.0" layoutY="284.0" text="Exit Date" textFill="#cd3232">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="374.0" text="Amount" textFill="#c93838">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="281.0" text="Exit Time" textFill="#c62828">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ct" layoutX="211.0" layoutY="323.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="cd" layoutX="69.0" layoutY="326.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15;" />
+      <Button layoutX="401.0" layoutY="342.0" mnemonicParsing="false" onAction="#doBill" style="-fx-background-radius: 10;" text="Generate Bill" textFill="#2934d7" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font></Button>
+      <TextField fx:id="amt" layoutX="211.0" layoutY="382.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-radius: 15;" />
+      <Separator layoutX="24.0" layoutY="429.0" prefHeight="3.0" prefWidth="556.0" />
+      <Separator layoutX="573.0" layoutY="282.0" orientation="VERTICAL" prefHeight="147.0" prefWidth="13.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-radius: 75; -fx-background-color: #a8c0ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParkingLayout.ParkingLayoutviewController">
+   <children>
+      <Separator prefWidth="200.0" />
+      <Separator layoutY="122.0" prefHeight="14.0" prefWidth="600.0" />
+      <Label layoutX="60.0" layoutY="-4.0" text="Parking Layout" textFill="#b23636">
+         <font>
+            <Font name="Harlow Solid Italic" size="75.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="231.0" text="Capacity" textFill="#b23636">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="176.0" text="Floor" textFill="#b23636">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="295.0" text="Type" textFill="#b23636">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rd2" layoutX="146.0" layoutY="308.0" mnemonicParsing="false" onAction="#doRad2" text="Two Wheeler" textFill="#070d46">
+         <toggleGroup>
+            <ToggleGroup fx:id="rd" />
+         </toggleGroup>
+         <font>
+            <Font name="Pristina" size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rd4" layoutX="353.0" layoutY="307.0" mnemonicParsing="false" onAction="#doRad4" text="Four Wheeler" textFill="#0a1c40" toggleGroup="$rd">
+         <font>
+            <Font name="Pristina" size="25.0" />
+         </font></RadioButton>
+      <TextField fx:id="txtflr" layoutX="184.0" layoutY="183.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtcap" layoutX="184.0" layoutY="238.0" style="-fx-background-radius: 15;" />
+      <Button layoutX="62.0" layoutY="376.0" mnemonicParsing="false" onAction="#doNew" prefHeight="45.0" prefWidth="76.0" style="-fx-background-radius: 15;" text="New" textFill="#2b36d0" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font></Button>
+      <Button layoutX="448.0" layoutY="376.0" mnemonicParsing="false" onAction="#doClose" prefHeight="45.0" prefWidth="76.0" style="-fx-background-radius: 15;" text="Close" textFill="#143ed7" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font></Button>
+      <Button layoutX="260.0" layoutY="376.0" mnemonicParsing="false" onAction="#doSave" prefHeight="45.0" prefWidth="76.0" style="-fx-background-radius: 15;" text="Save" textFill="#2330eb" underline="true">
+         <font>
+            <Font name="Pristina" size="22.0" />
+         </font></Button>
+      <ImageView fitHeight="155.0" fitWidth="200.0" layoutX="411.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@parking-icon-png-10867.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
